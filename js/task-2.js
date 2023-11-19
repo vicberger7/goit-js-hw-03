@@ -1,8 +1,7 @@
-function formatMessage(message, maxLength) {
-   if (message.length <= maxLength) {
-       return message;
-   } else {
-       return message.slice(0, maxLength) + "...";
-   }
-}
-
+function makeArray(firstArray, secondArray, maxLength) {
+  let joinedArray = firstArray.concat(secondArray);
+  if (joinedArray.length > maxLength) {
+    joinedArray.length = maxLength;
+    }
+    return (joinedArray);
+ }

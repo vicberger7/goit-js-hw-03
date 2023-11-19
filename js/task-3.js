@@ -1,6 +1,11 @@
-function checkForSpam(message) {
-    const normalizedMessage = message.toLowerCase();
-    return normalizedMessage.includes('spam') || normalizedMessage.includes('sale');
-}
-  
+function filterArray(numbers, value) {
+    const newArray = [];
 
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > value) {
+            newArray.push(numbers[i]);
+        }
+    }
+
+    return newArray;
+}
